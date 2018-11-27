@@ -6,10 +6,15 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <!-- CanvasJS -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.3.0/d3.min.js"></script>
-    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+    <!-- DataTables -->
+    
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.css"/>
+ 
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.js"></script>
 
      <!-- Extensions Library  -->
     <script src="../lib/tableau-extensions-1.latest.js"></script>
@@ -18,9 +23,16 @@
     </head>
     <body>
         <div class="container">
-           <h2>Waterfall sample</h2>
-            <div id="chartContainer" style="height: 500px; width: 500px;"></div> 
+            <div class="row" style="height: 300px; padding: 2px;">
+                <h2>Waterfall sample</h2>
+                <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+
+            <br>
+
+                <button id="dataButton" class="btn btn-default">Print Data</button>
+                <div id="data"></div>
+
+            </div>
         </div>
-        
     </body>
 </html>
